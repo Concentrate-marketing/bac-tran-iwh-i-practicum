@@ -1,0 +1,25 @@
+doctype html
+html
+  head
+    title= title
+    style.
+      table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      th {
+        background-color: lightgreen;
+      }
+  body
+    h1 Plants Table
+    a(href="/update-cobj") Add/Update this table
+    table
+      tr
+        th Name
+        th Type
+        th Description
+      each plant in data
+        tr
+          td= plant.properties.name
+          td= plant.properties.plant_type
+          td= plant.properties.plant_description

@@ -1,0 +1,25 @@
+doctype html
+html
+  head
+    title= title
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+  body
+    h1 Add a New Plant
+
+    form(method="POST", action="/update-cobj")
+      label(for="name") Name:
+      input(type="text", name="name", required)
+      br
+
+      label(for="plant_type") Plant Type:
+      input(type="text", name="plant_type", required)
+      br
+
+      label(for="plant_description") Plant Description:
+      textarea(name="plant_description", rows="4", cols="40")
+      br
+
+      button(type="submit") Submit
+
+    br
+    a(href="/") Return to the homepage
