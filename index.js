@@ -60,7 +60,7 @@ app.post('/update-cobj', async (req, res) => {
           }
         };
       
-        const url = 'https://api.hubapi.com/crm/v3/objects/plant';
+        const url = 'https://api.hubapi.com/crm/v3/objects/2-43003749';
         const headers = {
           Authorization: `Bearer ${PRIVATE_APP_ACCESS}`,
           'Content-Type': 'application/json'
